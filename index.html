@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Persik — брендовая одежда и обувь в Минске</title>
+  <meta name="description" content="Persik — магазины оригинальной брендовой одежды и обуви в Минске: Маяк Минска и Новая Боровая. Новые поступления каждую неделю.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Persik — брендовая одежда и обувь в Минске">
+  <meta property="og:description" content="Оригинальные бренды, новые поступления каждую неделю. Маяк Минска и Новая Боровая, 11:00–20:00.">
+  <meta property="og:image" content="img/logo/logo-full.webp">
+  <link rel="icon" href="img/logo/favicon.png">
+  <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Бегущая строка: текст ближайшего поступления -->
+<div class="ticker" aria-label="Ближайшее поступление">
+  <div class="ticker__track" data-draft>
+    <span>Воскресенье, 27 сентября — мега-поступление кроссовок</span>
+    <span>Маяк Минска · Новая Боровая</span>
+    <span>Ежедневно 11:00–20:00</span>
+    <span>Воскресенье, 27 сентября — мега-поступление кроссовок</span>
+    <span>Маяк Минска · Новая Боровая</span>
+    <span>Ежедневно 11:00–20:00</span>
+  </div>
+</div>
+
+<header class="header" id="top">
+  <button class="header__btn" id="menuOpen" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+  </button>
+  <a class="header__logo" href="#top" aria-label="Persik — на главную">
+    <img src="img/logo/wordmark.png" alt="persik" width="895" height="297">
+  </a>
+  <nav class="header__nav" aria-label="Разделы">
+    <a href="#drops">Поступления</a>
+    <a href="#cats">Что есть</a>
+    <a href="#how">Как устроено</a>
+    <a href="#stores">Магазины</a>
+  </nav>
+  <a class="header__btn" href="#stores" aria-label="Адреса магазинов">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+  </a>
+</header>
+
+<!-- Меню (мобильное) -->
+<div class="menu" id="menu" hidden>
+  <div class="menu__top">
+    <img src="img/logo/wordmark.png" alt="persik" class="menu__logo">
+    <button class="header__btn" id="menuClose" aria-label="Закрыть меню">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav class="menu__nav" aria-label="Меню">
+    <a href="#drops">Поступления</a>
+    <a href="#cats">Что у нас есть</a>
+    <a href="#how">Как у нас устроено</a>
+    <a href="#stores">Магазины</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--peach" href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener">Написать в Direct</a>
+    <a class="btn btn--line" href="https://www.instagram.com/persik_shop_by/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- 1. Первый экран: логотип с анимацией -->
+  <section class="hero">
+    <div class="hero__art">
+      <div class="logo-stack" id="logoStack" role="img" aria-label="Логотип Persik: девушка в наушниках сидит на большом персике">
+        <img class="ls ls--base"  src="img/logo/base.webp"  alt="" width="900" height="1000" fetchpriority="high">
+        <img class="ls ls--leaf"  src="img/logo/leaf.webp"  alt="" width="900" height="1000">
+        <img class="ls ls--lower" src="img/logo/lower.webp" alt="" width="900" height="1000">
+        <img class="ls ls--upper" src="img/logo/upper.webp" alt="" width="900" height="1000">
+        <span class="note note--1" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span>
+        <span class="note note--2" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 18V4l7 3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="18" r="3"/></svg></span>
+        <span class="note note--3" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 18V4l7 3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="18" r="3"/></svg></span>
+      </div>
+    </div>
+    <div class="hero__text">
+      <h1 class="hero__title">Оригинальные бренды в&nbsp;Минске</h1>
+      <p class="hero__lead">Привозим новую партию каждую неделю: кроссовки, куртки, трикотаж, аксессуары. Каждая вещь — в&nbsp;одном экземпляре, поэтому заходите почаще.</p>
+      <ul class="chips">
+        <li>100% оригинал</li>
+        <li>2 магазина</li>
+        <li>11:00–20:00</li>
+      </ul>
+      <div class="hero__cta">
+        <a class="btn btn--peach" href="#stores">Как добраться</a>
+        <a class="btn btn--line" href="#drops">Поступления</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Поступления -->
+  <section class="section" id="drops">
+    <div class="section__head">
+      <h2 class="h2">Поступления</h2>
+      <a class="link" href="https://www.instagram.com/persik_shop_by/" target="_blank" rel="noopener">Все в Instagram</a>
+    </div>
+
+    <article class="drop-main" data-draft>
+      <a class="drop-main__img" href="https://www.instagram.com/p/DdwFIHzDOgZ/" target="_blank" rel="noopener">
+        <img src="img/drop-sneakers.webp" alt="Кроссовки Nike, Puma, Adidas, New Balance, Lacoste разложены на белом фоне" width="900" height="1125">
+        <span class="badge badge--peach">Новое</span>
+      </a>
+      <div class="drop-main__body">
+        <p class="eyebrow">Воскресенье, 27 сентября</p>
+        <h3 class="h3">Мега-поступление кроссовок</h3>
+        <ul class="tags">
+          <li>Adidas Tokyo</li><li>Puma Speedcat</li><li>New Balance</li><li>ASICS</li><li>Lacoste</li><li>Timberland</li>
+        </ul>
+        <a class="btn btn--dark" href="https://www.instagram.com/p/DdwFIHzDOgZ/" target="_blank" rel="noopener">Смотреть в Instagram</a>
+      </div>
+    </article>
+
+    <p class="subhead">Недавно привезли</p>
+    <div class="rail" data-draft>
+      <a class="card" href="https://www.instagram.com/p/Ddt-8W5DNBY/" target="_blank" rel="noopener">
+        <div class="card__img"><img src="img/drop-diesel.webp" alt="Ремни и боксеры Diesel, носки Gymshark" loading="lazy" width="900" height="1125"></div>
+        <p class="card__date">26 сентября</p>
+        <p class="card__title">Diesel и Gymshark</p>
+        <p class="card__price">ремни 145 BYN · носки 20 BYN</p>
+      </a>
+      <a class="card" href="https://www.instagram.com/p/DdtOG4bjNiF/" target="_blank" rel="noopener">
+        <div class="card__img"><img src="img/drop-cos.webp" alt="Бордовый сапог COS в руке" loading="lazy" width="900" height="1125"></div>
+        <p class="card__date">Сентябрь</p>
+        <p class="card__title">Обувь COS, Arket, &amp;&nbsp;Other Stories</p>
+        <p class="card__price">могут быть дефекты — смотрите на месте</p>
+      </a>
+      <a class="card" href="https://www.instagram.com/p/Ddb0DhgjEMO/" target="_blank" rel="noopener">
+        <div class="card__img"><img src="img/drop-tommy.webp" alt="Рубашки и джинсы Tommy Jeans" loading="lazy" width="900" height="1125"></div>
+        <p class="card__date">19 сентября</p>
+        <p class="card__title">Tommy Hilfiger и Calvin Klein</p>
+        <p class="card__price">мужская одежда</p>
+      </a>
+      <a class="card" href="https://www.instagram.com/p/DdWZQCVDIqU/" target="_blank" rel="noopener">
+        <div class="card__img"><img src="img/drop-ugg.webp" alt="Угги UGG на полке магазина" loading="lazy" width="900" height="1125"></div>
+        <p class="card__date">17 сентября</p>
+        <p class="card__title">Оригинальные UGG</p>
+        <p class="card__price">от 245 BYN · размеры 36–49</p>
+      </a>
+      <a class="card" href="https://www.instagram.com/p/Dc3p5Z8jAL2/" target="_blank" rel="noopener">
+        <div class="card__img"><img src="img/drop-nike.webp" alt="Футболки Adidas Originals" loading="lazy" width="900" height="1125"></div>
+        <p class="card__date">5 сентября</p>
+        <p class="card__title">Nike, Adidas, Puma, Jordan</p>
+        <p class="card__price">футболки, байки, штаны</p>
+      </a>
+      <a class="card" href="https://www.instagram.com/p/DcymoBGjI6d/" target="_blank" rel="noopener">
+        <div class="card__img"><img src="img/drop-hoka.webp" alt="Кроссовки Hoka на полке" loading="lazy" width="900" height="1125"><span class="badge badge--peach">Sale</span></div>
+        <p class="card__date">3 сентября</p>
+        <p class="card__title">Скидка на HOKA</p>
+        <p class="card__price"><s>270</s> 220 BYN за любую модель</p>
+      </a>
+      <a class="card" href="https://www.instagram.com/p/DbvnJUHjM3R/" target="_blank" rel="noopener">
+        <div class="card__img"><img src="img/drop-uniqlo.webp" alt="Рубашка и брюки Uniqlo" loading="lazy" width="900" height="1125"></div>
+        <p class="card__date">Август</p>
+        <p class="card__title">Uniqlo для мужчин и женщин</p>
+        <p class="card__price">Heattech, AIRism, пуховики</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Бренды из прошлых поступлений — спокойный блок в общей сетке -->
+  <section class="past" aria-label="Бренды из прошлых поступлений">
+    <div class="past__box">
+      <div class="past__head">
+        <p class="past__title">В прошлых поступлениях были</p>
+        <p class="past__note">Что приедет в следующий раз — узнаём вместе с вами. Анонс накануне в Instagram.</p>
+      </div>
+      <ul class="past__list"><li>Nike</li><li>Hoka</li><li>UGG</li><li>Uniqlo</li><li>Tommy Hilfiger</li><li>Calvin Klein</li><li>Diesel</li><li>Adidas</li><li>COS</li><li>Gymshark</li><li>Puma</li><li>New Balance</li><li>Lacoste</li><li>Timberland</li></ul>
+    </div>
+  </section>
+
+  <!-- 3. Категории -->
+  <section class="section" id="cats">
+    <div class="section__head">
+      <h2 class="h2">Что у нас есть</h2>
+    </div>
+    <p class="section__lead">Нажмите на раздел — откроется Direct: спросите про размер или&nbsp;модель.</p>
+    <div class="cats">
+      <a class="cat" href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener" aria-label="Кроссовки — спросить в Direct"><img src="img/cat-sneakers.webp" alt="" loading="lazy"><span class="cat__title">Кроссовки</span><span class="cat__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 3 3 10.5l7 2.5m11-10-7.5 18-3.5-8m11-10L10 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span></a>
+      <a class="cat" href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener" aria-label="Угги и сапоги — спросить в Direct"><img src="img/cat-boots.webp" alt="" loading="lazy"><span class="cat__title">Угги и сапоги</span><span class="cat__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 3 3 10.5l7 2.5m11-10-7.5 18-3.5-8m11-10L10 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span></a>
+      <a class="cat" href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener" aria-label="Куртки — спросить в Direct"><img src="img/cat-outer.webp" alt="" loading="lazy"><span class="cat__title">Куртки</span><span class="cat__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 3 3 10.5l7 2.5m11-10-7.5 18-3.5-8m11-10L10 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span></a>
+      <a class="cat" href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener" aria-label="Джинсы и брюки — спросить в Direct"><img src="img/cat-jeans.webp" alt="" loading="lazy"><span class="cat__title">Джинсы и брюки</span><span class="cat__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 3 3 10.5l7 2.5m11-10-7.5 18-3.5-8m11-10L10 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span></a>
+      <a class="cat" href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener" aria-label="Свитеры и футболки — спросить в Direct"><img src="img/cat-knit.webp" alt="" loading="lazy"><span class="cat__title">Свитеры и футболки</span><span class="cat__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 3 3 10.5l7 2.5m11-10-7.5 18-3.5-8m11-10L10 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span></a>
+      <a class="cat" href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener" aria-label="Аксессуары — спросить в Direct"><img src="img/cat-acc.webp" alt="" loading="lazy"><span class="cat__title">Аксессуары</span><span class="cat__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M21 3 3 10.5l7 2.5m11-10-7.5 18-3.5-8m11-10L10 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span></a>
+    </div>
+  </section>
+
+  <!-- 5. Как у нас устроено -->
+  <section class="section" id="how">
+    <div class="section__head">
+      <h2 class="h2">Как у нас устроено</h2>
+    </div>
+    <ol class="how" data-draft>
+      <li>
+        <h3>Только оригинал</h3>
+        <p>Брендовые вещи из стоков и секонд-хенда. Бывают вещи с небольшими дефектами — это всегда видно на месте.</p>
+      </li>
+      <li>
+        <h3>Поступления каждую неделю</h3>
+        <p>Анонс — накануне в Instagram. Подпишитесь, чтобы прийти первыми.</p>
+      </li>
+      <li>
+        <h3>Каждая вещь в одном экземпляре</h3>
+        <p>Увидели что-то в посте? Напишите в Direct — подскажем, есть ли ваш размер.</p>
+      </li>
+      <li>
+        <h3>Покупка только в магазине</h3>
+        <p>Почты и доставки нет, обмена и возврата нет. Зато можно всё примерить.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 6. Магазины -->
+  <section class="section" id="stores">
+    <div class="section__head">
+      <h2 class="h2">Магазины</h2>
+    </div>
+    <div class="stores">
+      <article class="store">
+        <div class="store__img"><img src="img/store-shoes.webp" alt="Полка с кроссовками в магазине Persik на Маяке Минска" loading="lazy"></div>
+        <div class="store__body">
+          <p class="eyebrow">Маяк Минска</p>
+          <h3 class="h3">ул. Кирилла Туровского, 4, пом.&nbsp;222</h3>
+          <p class="store__note">Бульвар Пикассо. Вход с&nbsp;обратной стороны дома.</p>
+          <p class="store__hours">Ежедневно 11:00–20:00</p>
+          <div class="store__cta">
+            <a class="btn btn--dark" href="https://yandex.by/maps/?text=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB%D0%B0%20%D0%A2%D1%83%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%204" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" fill="none"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>На карте</a>
+            <a class="btn btn--line" href="https://www.instagram.com/persik_shop_by/" target="_blank" rel="noopener">@persik_shop_by</a>
+          </div>
+        </div>
+      </article>
+      <article class="store">
+        <div class="store__img"><img src="img/store-rails.webp" alt="Стойка с куртками в магазине Persik" loading="lazy"></div>
+        <div class="store__body">
+          <p class="eyebrow">Новая Боровая</p>
+          <h3 class="h3">ул. Авиационная, 17</h3>
+          <p class="store__note" data-draft>Фото временное — заменим на фото этого магазина.</p>
+          <p class="store__hours">Ежедневно 11:00–20:00</p>
+          <div class="store__cta">
+            <a class="btn btn--dark" href="https://yandex.by/maps/?text=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%91%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%D1%8F%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%90%D0%B2%D0%B8%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%2C%2017" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" fill="none"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>На карте</a>
+            <a class="btn btn--line" href="https://www.instagram.com/persik_borovaya/" target="_blank" rel="noopener">@persik_borovaya</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 7. Instagram -->
+  <section class="section insta">
+    <div class="section__head">
+      <h2 class="h2">Мы в Instagram</h2>
+      <span class="insta__count">63 тыс. подписчиков</span>
+    </div>
+    <div class="insta__grid">
+      <img src="img/ig-1.webp" alt="" loading="lazy">
+      <img src="img/ig-2.webp" alt="" loading="lazy">
+      <img src="img/ig-3.webp" alt="" loading="lazy">
+      <img src="img/ig-4.webp" alt="" loading="lazy">
+      <img src="img/ig-5.webp" alt="" loading="lazy">
+      <img src="img/ig-6.webp" alt="" loading="lazy">
+    </div>
+    <a class="btn btn--dark btn--wide" href="https://www.instagram.com/persik_shop_by/" target="_blank" rel="noopener">Подписаться на @persik_shop_by</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <img src="img/logo/wordmark.png" alt="persik" class="footer__logo" loading="lazy">
+  <div class="footer__cols">
+    <div>
+      <p class="footer__h">Маяк Минска</p>
+      <p>ул. Кирилла Туровского, 4, пом. 222</p>
+      <p>11:00–20:00</p>
+    </div>
+    <div>
+      <p class="footer__h">Новая Боровая</p>
+      <p>ул. Авиационная, 17</p>
+      <p>11:00–20:00</p>
+    </div>
+    <div>
+      <p class="footer__h">Связаться</p>
+      <p><a href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener">Direct</a> · <a href="https://www.instagram.com/persik_shop_by/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </div>
+  <p class="footer__small">Секонд-хенд и сток. Почты нет, обмена и возврата нет.</p>
+</footer>
+
+<!-- Нижняя панель на телефоне -->
+<nav class="dock" aria-label="Быстрые действия">
+  <a class="btn btn--line" href="#stores">Адреса</a>
+  <a class="btn btn--peach" href="https://ig.me/m/persik_shop_by" target="_blank" rel="noopener">Написать в Direct</a>
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>
